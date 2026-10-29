@@ -1,4 +1,4 @@
-import { createClient } from "@supabase/supabase-js";
+import { createClient, isAuthRetryableFetchError } from "@supabase/supabase-js";
 import { z } from "zod";
 import { schemas } from "./validation";
 
@@ -489,12 +489,33 @@ export async function handleApi(request: Request, env: Env): Promise<Response> {
             autoRefreshToken: false,
             detectSessionInUrl: false,
           },
+          global: {
+            fetch: (url, init) =>
+              fetch(url, { ...init, signal: AbortSignal.timeout(12000) }),
+          },
         },
       );
       const { data, error } = await auth.auth.signInWithPassword({
         email,
         password,
       });
+      if (error?.status === 429)
+        throw new ApiError(
+          "RATE_LIMITED",
+          429,
+          "Sign-in is busy. Try again shortly.",
+          {},
+          60,
+        );
+      if (
+        error &&
+        (isAuthRetryableFetchError(error) || (error.status || 0) >= 500)
+      )
+        throw new ApiError(
+          "SERVICE_UNAVAILABLE",
+          503,
+          "Sign-in is temporarily unavailable. Try again shortly.",
+        );
       if (error || !data.user)
         throw new ApiError(
           "UNAUTHENTICATED",

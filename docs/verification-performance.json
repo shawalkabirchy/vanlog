@@ -1,0 +1,271 @@
+{
+  "executedAt": "2026-10-29T18:00:10.558Z",
+  "origin": "https://vanlog-consolelog.pages.dev",
+  "concurrency": 10,
+  "sampleCount": 50,
+  "workload": "Five sequential owner GETs per visitor; ten distinct demo sessions concurrently. Includes response body transfer. Auth login is excluded.",
+  "durationMs": 2295,
+  "p50Ms": 248,
+  "p95Ms": 1188,
+  "maxMs": 1209,
+  "targetMs": 1500,
+  "passed": true,
+  "client": {
+    "node": "v24.14.0",
+    "os": "win32 10.0.26200",
+    "cpu": "13th Gen Intel(R) Core(TM) i7-1355U",
+    "location": "Dhaka, Bangladesh; local operator network"
+  },
+  "samples": [
+    {
+      "path": "/api/dashboard",
+      "durationMs": 610,
+      "status": 200
+    },
+    {
+      "path": "/api/equipment?limit=25",
+      "durationMs": 249,
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard",
+      "durationMs": 960,
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard",
+      "durationMs": 981,
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard",
+      "durationMs": 983,
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard",
+      "durationMs": 1006,
+      "status": 200
+    },
+    {
+      "path": "/api/tasks?limit=25",
+      "durationMs": 249,
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard",
+      "durationMs": 1173,
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard",
+      "durationMs": 1186,
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard",
+      "durationMs": 1188,
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard",
+      "durationMs": 1196,
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard",
+      "durationMs": 1209,
+      "status": 200
+    },
+    {
+      "path": "/api/equipment?limit=25",
+      "durationMs": 244,
+      "status": 200
+    },
+    {
+      "path": "/api/equipment?limit=25",
+      "durationMs": 236,
+      "status": 200
+    },
+    {
+      "path": "/api/equipment?limit=25",
+      "durationMs": 236,
+      "status": 200
+    },
+    {
+      "path": "/api/equipment?limit=25",
+      "durationMs": 230,
+      "status": 200
+    },
+    {
+      "path": "/api/history?limit=25",
+      "durationMs": 244,
+      "status": 200
+    },
+    {
+      "path": "/api/equipment?limit=25",
+      "durationMs": 258,
+      "status": 200
+    },
+    {
+      "path": "/api/equipment?limit=25",
+      "durationMs": 268,
+      "status": 200
+    },
+    {
+      "path": "/api/tasks?limit=25",
+      "durationMs": 240,
+      "status": 200
+    },
+    {
+      "path": "/api/tasks?limit=25",
+      "durationMs": 269,
+      "status": 200
+    },
+    {
+      "path": "/api/tasks?limit=25",
+      "durationMs": 271,
+      "status": 200
+    },
+    {
+      "path": "/api/equipment?limit=25",
+      "durationMs": 295,
+      "status": 200
+    },
+    {
+      "path": "/api/tasks?limit=25",
+      "durationMs": 267,
+      "status": 200
+    },
+    {
+      "path": "/api/equipment?limit=25",
+      "durationMs": 339,
+      "status": 200
+    },
+    {
+      "path": "/api/equipment?limit=25",
+      "durationMs": 363,
+      "status": 200
+    },
+    {
+      "path": "/api/reports/costs?startOn=2026-10-29&endOn=2026-10-30",
+      "durationMs": 237,
+      "status": 200
+    },
+    {
+      "path": "/api/tasks?limit=25",
+      "durationMs": 226,
+      "status": 200
+    },
+    {
+      "path": "/api/history?limit=25",
+      "durationMs": 229,
+      "status": 200
+    },
+    {
+      "path": "/api/tasks?limit=25",
+      "durationMs": 249,
+      "status": 200
+    },
+    {
+      "path": "/api/history?limit=25",
+      "durationMs": 239,
+      "status": 200
+    },
+    {
+      "path": "/api/history?limit=25",
+      "durationMs": 242,
+      "status": 200
+    },
+    {
+      "path": "/api/tasks?limit=25",
+      "durationMs": 242,
+      "status": 200
+    },
+    {
+      "path": "/api/history?limit=25",
+      "durationMs": 237,
+      "status": 200
+    },
+    {
+      "path": "/api/tasks?limit=25",
+      "durationMs": 236,
+      "status": 200
+    },
+    {
+      "path": "/api/tasks?limit=25",
+      "durationMs": 248,
+      "status": 200
+    },
+    {
+      "path": "/api/history?limit=25",
+      "durationMs": 238,
+      "status": 200
+    },
+    {
+      "path": "/api/reports/costs?startOn=2026-10-29&endOn=2026-10-30",
+      "durationMs": 228,
+      "status": 200
+    },
+    {
+      "path": "/api/history?limit=25",
+      "durationMs": 255,
+      "status": 200
+    },
+    {
+      "path": "/api/reports/costs?startOn=2026-10-29&endOn=2026-10-30",
+      "durationMs": 240,
+      "status": 200
+    },
+    {
+      "path": "/api/history?limit=25",
+      "durationMs": 239,
+      "status": 200
+    },
+    {
+      "path": "/api/reports/costs?startOn=2026-10-29&endOn=2026-10-30",
+      "durationMs": 261,
+      "status": 200
+    },
+    {
+      "path": "/api/reports/costs?startOn=2026-10-29&endOn=2026-10-30",
+      "durationMs": 242,
+      "status": 200
+    },
+    {
+      "path": "/api/history?limit=25",
+      "durationMs": 230,
+      "status": 200
+    },
+    {
+      "path": "/api/history?limit=25",
+      "durationMs": 265,
+      "status": 200
+    },
+    {
+      "path": "/api/reports/costs?startOn=2026-10-29&endOn=2026-10-30",
+      "durationMs": 231,
+      "status": 200
+    },
+    {
+      "path": "/api/reports/costs?startOn=2026-10-29&endOn=2026-10-30",
+      "durationMs": 221,
+      "status": 200
+    },
+    {
+      "path": "/api/reports/costs?startOn=2026-10-29&endOn=2026-10-30",
+      "durationMs": 252,
+      "status": 200
+    },
+    {
+      "path": "/api/reports/costs?startOn=2026-10-29&endOn=2026-10-30",
+      "durationMs": 222,
+      "status": 200
+    },
+    {
+      "path": "/api/reports/costs?startOn=2026-10-29&endOn=2026-10-30",
+      "durationMs": 233,
+      "status": 200
+    }
+  ]
+}

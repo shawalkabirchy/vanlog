@@ -2,9 +2,14 @@
   "executedAt": "2026-10-29T17:50:25.478Z",
   "unit": {
     "command": "npm run check",
-    "testsPassed": 11,
+    "testsPassed": 14,
     "typecheck": "passed",
-    "lint": "passed"
+    "lint": "passed",
+    "additionalChecks": [
+      "Supabase Auth 503 maps to unavailable",
+      "Supabase Auth 429 preserves rate-limit category and Retry-After",
+      "Invalid credentials retain generic 401"
+    ]
   },
   "hosted": {
     "command": "npm run test:integration",
