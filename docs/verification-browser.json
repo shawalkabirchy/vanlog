@@ -1,0 +1,44 @@
+{
+  "executedAt": "2026-10-29T17:50:37.540Z",
+  "origin": "http://localhost:8788",
+  "productionBuild": true,
+  "browserPackage": "@playwright/test 1.64.1",
+  "viewports": [
+    {
+      "role": "owner",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "role": "staff",
+      "width": 360,
+      "height": 800
+    }
+  ],
+  "checks": [
+    {
+      "engine": "chromium",
+      "name": "owner setup, staff QR logging, uncertain retry, service and cost export",
+      "result": "expected",
+      "durationMs": 21599
+    },
+    {
+      "engine": "firefox",
+      "name": "owner setup, staff QR logging, uncertain retry, service and cost export",
+      "result": "expected",
+      "durationMs": 25338
+    },
+    {
+      "engine": "webkit",
+      "name": "owner setup, staff QR logging, uncertain retry, service and cost export",
+      "result": "expected",
+      "durationMs": 27736
+    }
+  ],
+  "passed": true,
+  "accessibility": "axe WCAG 2.0/2.1/2.2 A/AA: landing, dashboard, task dialog, mobile equipment/service dialog, owner report; no violations in checked states",
+  "keyboard": "Chromium/Firefox skip-link focus; Windows WebKit primary-button focus and Enter; all engines dialog Escape/focus return",
+  "failureSimulation": "Actual hosted reading committed, response dropped, original request ID retried with preserved input",
+  "console": "No unhandled page exceptions. Intentional connection reset and unauthorized session checks are expected network events.",
+  "realDevice": "Not tested"
+}

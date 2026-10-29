@@ -1,0 +1,89 @@
+{
+  "executedAt": "2026-10-29T17:50:25.478Z",
+  "unit": {
+    "command": "npm run check",
+    "testsPassed": 11,
+    "typecheck": "passed",
+    "lint": "passed"
+  },
+  "hosted": {
+    "command": "npm run test:integration",
+    "target": "Local Pages Functions + hosted Supabase PostgreSQL",
+    "passed": true,
+    "testsPassed": 14,
+    "testsFailed": 0,
+    "checks": [
+      {
+        "name": "hosted Supabase and real Pages Functions blocks public signup and direct database RPC access",
+        "result": "passed",
+        "durationMs": 1557.8095999999996
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions rejects staff owner actions and forged fields",
+        "result": "passed",
+        "durationMs": 2228.5733
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions computes runtime thresholds exactly and rejects decreasing meters",
+        "result": "passed",
+        "durationMs": 3864.9014000000006
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions serializes competing readings and appends only one history record",
+        "result": "passed",
+        "durationMs": 2239.311100000001
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions replays committed service requests without duplicate costs",
+        "result": "passed",
+        "durationMs": 2227.605800000001
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions keeps stale service attempts out of history",
+        "result": "passed",
+        "durationMs": 1087.6964999999982
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions serializes service completion against a simultaneous reading",
+        "result": "passed",
+        "durationMs": 3074.6848999999966
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions uses calendar thresholds and the most urgent combined status",
+        "result": "passed",
+        "durationMs": 3521.441899999998
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions retains archive history and blocks new logs",
+        "result": "passed",
+        "durationMs": 4794.114999999998
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions paginates without exposing cursor internals or restarting bad cursors",
+        "result": "passed",
+        "durationMs": 869.8147000000026
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions reports exact costs and treats end dates as exclusive",
+        "result": "passed",
+        "durationMs": 512.8101999999999
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions rejects cross-origin, oversized, and unknown API requests",
+        "result": "passed",
+        "durationMs": 1003.1317999999956
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions increments distributed rate limits atomically",
+        "result": "passed",
+        "durationMs": 401.13990000000194
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions revokes disabled accounts and rejects new application sessions",
+        "result": "passed",
+        "durationMs": 2084.7808000000005
+      }
+    ]
+  },
+  "fixtures": "Only manifested QA equipment removed. Complete demo retained."
+}

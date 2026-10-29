@@ -1,0 +1,54 @@
+{
+  "name": "vanlog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && node scripts/fix-static-export.mjs",
+    "preview": "wrangler pages dev out --port 8788",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:integration": "vitest run --config vitest.integration.config.ts",
+    "test:e2e": "playwright test",
+    "test:restore": "node --env-file=.dev.vars --experimental-strip-types scripts/restore-rehearsal.ts",
+    "benchmark": "node --env-file=.dev.vars --experimental-strip-types scripts/benchmark.ts",
+    "capture": "node --env-file=.dev.vars --experimental-strip-types scripts/capture.ts",
+    "check": "npm run typecheck && npm run lint && npm test",
+    "operator": "node --env-file=.dev.vars --experimental-strip-types scripts/operator.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/geist": "5.3.0",
+    "@supabase/supabase-js": "2.118.0",
+    "class-variance-authority": "0.7.1",
+    "cn": "0.5.0",
+    "lucide-react": "1.64.0",
+    "next": "16.4.3",
+    "qrcode": "1.5.4",
+    "radix-ui": "1.8.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@cloudflare/workers-types": "5.20261029.1",
+    "@playwright/test": "1.64.1",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "26.6.6",
+    "@types/qrcode": "1.5.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.3",
+    "supabase": "2.122.0",
+    "tailwindcss": "4.3.3",
+    "typescript": "6.0.3",
+    "vitest": "5.0.5",
+    "wrangler": "4.155.0"
+  }
+}

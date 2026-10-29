@@ -1,0 +1,29 @@
+{
+  "executedAt": "2026-10-29T17:10:01.820Z",
+  "result": "passed",
+  "database": "PostgreSQL 17.11 (Debian 17.11-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit",
+  "network": "none",
+  "backup": "backups/rehearsal-1793293797438.json",
+  "counts": {
+    "tasks": 9,
+    "readings": 6,
+    "services": 2,
+    "costMinor": 12150,
+    "equipment": 8
+  },
+  "checks": [
+    "all migrations apply to PostgreSQL 17",
+    "application IDs and record counts preserved",
+    "cost totals preserved",
+    "credentials and sessions excluded",
+    "invalid/missing backup fields rejected before replacement",
+    "broken-reference restore rolls back",
+    "anonymous/authenticated RPC denied",
+    "leap-day and combined maintenance thresholds",
+    "expired receipt cannot duplicate a record",
+    "100 equipment cap",
+    "20 tasks per equipment cap",
+    "10,000 combined history cap",
+    "expired sessions denied"
+  ]
+}

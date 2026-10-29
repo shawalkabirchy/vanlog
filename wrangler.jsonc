@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "vanlog-consolelog",
+  "pages_build_output_dir": "./out",
+  "compatibility_date": "2026-10-29",
+  "vars": {
+    "SUPABASE_URL": "https://gvtazbiscsopygddtclb.supabase.co",
+    "APP_ORIGIN": "https://vanlog-consolelog.pages.dev",
+    "BUSINESS_TIME_ZONE": "UTC",
+    "BUSINESS_CURRENCY": "USD",
+    "DEMO_MODE": "true",
+  },
+}
