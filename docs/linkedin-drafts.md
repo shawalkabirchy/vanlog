@@ -2,6 +2,8 @@
 
 Drafts only. Nothing has been posted or sent. Replace the screenshot/video attachment with the matching artifact before publishing.
 
+Suggested first post: draft 1 with the 42-second walkthrough. Intended audience: food-truck/mobile-kitchen operators and equipment-service teams.
+
 ## 1 — The staff workflow
 
 A maintenance dashboard only helps when the person doing the work can keep it up to date.
@@ -22,7 +24,7 @@ Attachment: `assets/equipment-mobile.png` or `assets/walkthrough.webm`.
 
 What happens if a staff member taps Save, the database commits, and the response never reaches their phone?
 
-In VanLog, the form keeps the entered values and retries the same request identity. The server returns the original result instead of creating another service record or charging the cost twice.
+In VanLog, the form keeps the entered values and retries the same request identity. The server returns the original result instead of creating another service record or counting the same cost twice.
 
 Competing readings also carry the version the person reviewed. One succeeds; the other asks for a refresh and confirmation. Those cases are covered by hosted database and browser checks, alongside a backup restore rehearsal.
 

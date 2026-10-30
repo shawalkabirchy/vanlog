@@ -29,6 +29,8 @@ The compact JSON evidence files record actual outcomes and execution times. Raw 
 
 The canonical live deployment also passed 14 integration tests and the complete workflow in Chromium, Firefox and WebKit. Production cookie flags, logout and revocation were checked directly. The ten-session, 50-request benchmark measured p95 **1,188 ms**, below the 1,500 ms target. See the deployment and performance JSON for their exact timestamps and workload.
 
+GitHub push deployment was also verified: commit `015b8eb` triggered Pages automatically (`github:push`) and deployed successfully as `9315dc49`. Cloudflare’s GitHub app was granted access to VanLog with explicit user approval.
+
 ## Provider advisors and explicit limits
 
 Supabase's security advisor reports nine informational “RLS enabled, no policy” notices. These tables intentionally deny all anonymous/authenticated access in a private schema; only the trusted service-role backend calls them. Adding permissive policies to silence those notices would weaken this architecture. [Advisor explanation](https://supabase.com/docs/guides/database/database-linter?lint=0008_rls_enabled_no_policy).

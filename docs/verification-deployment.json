@@ -120,7 +120,14 @@
     "revokedSession": 401,
     "safeEquipmentFields": true
   },
-  "nativePushTrigger": "VanLog added to the existing Cloudflare GitHub app installation with user approval; push verification in progress",
+  "nativePushTrigger": {
+    "result": "passed",
+    "type": "github:push",
+    "commit": "015b8ebed02425550dfcda8fe2742e3231e2fc2e",
+    "deploymentId": "9315dc49-7f16-4880-887b-f250987b8a78",
+    "completedAt": "2026-10-30T12:16:48.240343Z",
+    "repositoryAccess": "User approved adding only shawalkabirchy/vanlog to the existing Cloudflare GitHub installation"
+  },
   "buildRuntime": {
     "node": "24.14.0",
     "npm": "10.9.9",
