@@ -90,6 +90,9 @@ test("owner setup, staff QR logging, uncertain retry, service and cost export", 
       .getByRole("navigation", { name: "Workspace navigation" })
       .getByRole("link", { name: "Equipment", exact: true })
       .click();
+    await expect(
+      page.getByRole("heading", { name: "Your equipment.", exact: true }),
+    ).toBeVisible();
     await page
       .getByRole("button", { name: "Add equipment", exact: true })
       .click();
@@ -99,14 +102,15 @@ test("owner setup, staff QR logging, uncertain retry, service and cost export", 
       .getByLabel("Category", { exact: true })
       .fill("QA portable power");
     await dialog.getByLabel("Initial cumulative hours").fill("100.0");
-    const created = page.waitForResponse(
-      (r) =>
-        r.url().endsWith("/api/equipment") && r.request().method() === "POST",
-    );
-    await dialog
-      .getByRole("button", { name: "Save equipment", exact: true })
-      .click();
-    const response = await created;
+    const [response] = await Promise.all([
+      page.waitForResponse(
+        (r) =>
+          r.url().endsWith("/api/equipment") && r.request().method() === "POST",
+      ),
+      dialog
+        .getByRole("button", { name: "Save equipment", exact: true })
+        .click(),
+    ]);
     expect(response.status()).toBe(201);
     const eq = (await response.json()) as { id: string };
     equipmentIds.push(eq.id);

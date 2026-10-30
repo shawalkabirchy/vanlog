@@ -1,0 +1,129 @@
+{
+  "executedAt": "2026-10-30T12:10:06.159Z",
+  "origin": "https://vanlog-consolelog.pages.dev",
+  "repository": "https://github.com/shawalkabirchy/vanlog",
+  "verifiedApplicationCommit": "b7adfa488c71f90b166339ad7ba060ed997b47a7",
+  "initialDeploymentId": "56101319-f824-481c-9a64-1bde038f4cbd",
+  "githubCI": "https://github.com/shawalkabirchy/vanlog/actions/runs/40926802222",
+  "api": {
+    "passed": true,
+    "testsPassed": 14,
+    "testsFailed": 0,
+    "checks": [
+      {
+        "name": "hosted Supabase and real Pages Functions blocks public signup and direct database RPC access",
+        "result": "passed"
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions rejects staff owner actions and forged fields",
+        "result": "passed"
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions computes runtime thresholds exactly and rejects decreasing meters",
+        "result": "passed"
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions serializes competing readings and appends only one history record",
+        "result": "passed"
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions replays committed service requests without duplicate costs",
+        "result": "passed"
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions keeps stale service attempts out of history",
+        "result": "passed"
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions serializes service completion against a simultaneous reading",
+        "result": "passed"
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions uses calendar thresholds and the most urgent combined status",
+        "result": "passed"
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions retains archive history and blocks new logs",
+        "result": "passed"
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions paginates without exposing cursor internals or restarting bad cursors",
+        "result": "passed"
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions reports exact costs and treats end dates as exclusive",
+        "result": "passed"
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions rejects cross-origin, oversized, and unknown API requests",
+        "result": "passed"
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions increments distributed rate limits atomically",
+        "result": "passed"
+      },
+      {
+        "name": "hosted Supabase and real Pages Functions revokes disabled accounts and rejects new application sessions",
+        "result": "passed"
+      }
+    ]
+  },
+  "browsers": {
+    "executedAt": "2026-10-30T12:06:43.586Z",
+    "passed": true,
+    "checks": [
+      {
+        "engine": "chromium",
+        "result": "expected",
+        "durationMs": 39913
+      },
+      {
+        "engine": "firefox",
+        "result": "expected",
+        "durationMs": 48173
+      },
+      {
+        "engine": "webkit",
+        "result": "expected",
+        "durationMs": 43764
+      }
+    ]
+  },
+  "publicChecks": {
+    "landing": 200,
+    "health": 200,
+    "configuration": {
+      "currency": "USD",
+      "timeZone": "UTC",
+      "demoMode": true
+    },
+    "unknownApi": 404,
+    "apiCacheControl": "no-store, private"
+  },
+  "performanceEvidence": "verification-performance.json",
+  "fixtures": "QA IDs manifested and cleaned; normal shared sample records retained",
+  "latestCommitDeployment": "Verified successful",
+  "finalApplicationDeploymentId": "f0dfe515-3583-4365-aff7-dddda4dddc23",
+  "session": {
+    "executedAt": "2026-10-30T12:07:33.172Z",
+    "cookieName": "__Host-vanlog_session",
+    "attributes": [
+      "Path=/",
+      "HttpOnly",
+      "SameSite=Strict",
+      "Max-Age=28800",
+      "Secure"
+    ],
+    "hostOnly": true,
+    "sessionLookup": 200,
+    "logout": 204,
+    "revokedSession": 401,
+    "safeEquipmentFields": true
+  },
+  "nativePushTrigger": "VanLog added to the existing Cloudflare GitHub app installation with user approval; push verification in progress",
+  "buildRuntime": {
+    "node": "24.14.0",
+    "npm": "10.9.9",
+    "source": "Cloudflare build log"
+  }
+}
