@@ -5,7 +5,7 @@
   "compatibility_date": "2026-10-29",
   "vars": {
     "SUPABASE_URL": "https://gvtazbiscsopygddtclb.supabase.co",
-    "APP_ORIGIN": "https://vanlog-consolelog.pages.dev",
+    "APP_ORIGIN": "https://vanlog.consolelog.studio",
     "BUSINESS_TIME_ZONE": "UTC",
     "BUSINESS_CURRENCY": "USD",
     "DEMO_MODE": "true",

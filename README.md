@@ -2,7 +2,7 @@
 
 A maintenance workspace for food trucks and mobile kitchens. Built as a **self-initiated ConsoleLog Studio portfolio project**, using fictional shared data.
 
-[Live demo](https://vanlog-consolelog.pages.dev) · [Source brief](files/consolelog-project-build-briefs.md) · [Acceptance evidence](docs/acceptance.md) · [Case study](docs/case-study.md)
+[Live demo](https://vanlog.consolelog.studio) · [Source brief](files/consolelog-project-build-briefs.md) · [Acceptance evidence](docs/acceptance.md) · [Case study](docs/case-study.md)
 
 ![Owner dashboard](docs/assets/dashboard-desktop.png)
 
